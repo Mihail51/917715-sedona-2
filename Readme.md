@@ -2,6 +2,7 @@
 
 * Студент: [Mihail Gofman](https://up.htmlacademy.ru/htmlcss-individual/2/user/917715).
 * Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
+* Ссылка на проект [Мой сайт "Седона"](https://mihail51.github.io/917715-sedona-2/)
 
 ---
 
