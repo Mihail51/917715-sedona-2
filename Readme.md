@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Mihail Gofman](https://up.htmlacademy.ru/htmlcss-individual/2/user/917715).
-* Наставник: `Неизвестно`.
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
