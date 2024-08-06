@@ -1,0 +1,27 @@
+.list {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.advantages__item_1, .advantages__item_5 {
+    width: 100%;
+}
+.advantages__item_2, .advantages__item_3, .advantages__item_4 {
+    flex-basis: calc(100%/3);
+}
+.advantages__item .advantages__advantage {
+    width: 100%;
+    background-color: #ff0;
+}
+.advantages__item_1 .advantages__advantage, .advantages__item_5 .advantages__advantage {
+    width: calc(100%/3);
+    background-color: #f00;
+}
+.advantages__item {
+    display: flex;
+    justify-content: start;
+}
+.advantages__item_5 {
+    justify-content: end;
+}
