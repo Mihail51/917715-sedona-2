@@ -7,7 +7,7 @@
 .advantages__item_1, .advantages__item_5 {
     width: 100%;
 }
-.advantages__item_2, .advantages__item_3, .advantages__item_4 {
+.advantages__item {
     flex-basis: calc(100%/3);
 }
 .advantages__item .advantages__advantage {
