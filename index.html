@@ -106,7 +106,29 @@
             <p class="description-basic search-hotels__description-basic">Заинтересовались?</p>
             <p class="description-additional search-hotels__description-additional">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
-          <button type="button" class="btn search-hotels__btn">ПОИСК ГОСТИНИЦЫ В седоне</button>
+          <button type="button" class="btn search-hotels__btn" onclick="window.hotelSearch.showModal()" >ПОИСК ГОСТИНИЦЫ В седоне</button>
+          <dialog id="hotelSearch" class="popup search-hotels__popup">
+            <h3>Поиск гостиницы в Седоне</h3>
+            <button class="btn popup__btn_close" onclick="window.hotelSearch.close()"><img width="19.62" height="19.62" src="images/close.svg" alt=""></button>
+            <form action="" method="dialog" class="form search-hotels__form">
+              <label>Дата заезда:<input type="text" name="arrival-date" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="27 апреля 2020"></label>
+              <p class="arrival-date search-hotels__arrival-date">Мы не можем отправить вас в прошлое.</p>
+              <label>Дата выезда:<input type="text" name="departure-date" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="1 сентября 2023"></label>
+              <p class="departure-date search-hotels__departure-date">На эти даты есть свободные номера. Пока есть.</p>
+              <label>Взрослые:
+                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                <input type="number" name="number-of-adults" min="1" value="1" readonly="">
+                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+              </label>
+              <label>Дети:<span>i</span>
+                <button type="button" onclick="this.nextElementSibling.stepDown()">-</button>
+                <input type="number" name="number-of-children" min="0" value="0" readonly="">
+                <button type="button" onclick="this.previousElementSibling.stepUp()">+</button>
+              </label>
+              <p class="number-of-children search-hotels__number-of-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              <input type="submit" value="Найти">
+            </form>
+          </dialog>
         </section>
         <section class="subscribe main__subscribe"></section>
       </main>
